@@ -1,47 +1,54 @@
-# Тест на тип личности в отношениях (Relationship Personality Test)
+# Relationship Personality Test
 
-Это веб-приложение, созданное с использованием React, Vite и TypeScript, которое позволяет пользователям пройти тест и определить свой доминирующий стиль личности в отношениях. Результаты визуализируются с помощью описания и радарной диаграммы.
+A sleek web app that helps you discover—and embrace—your dominant personality style in relationships. Built with modern tools and packed with features, it’s your go-to for self-insight (and a bit of fun).
 
-## ✨ Особенности
+---
 
-* Интерфейс теста с вопросами и вариантами ответов.
-* Расчет баллов по 6 стилям отношений:
-    * Открытость (Openness)
-    * Избегающий (Avoidant)
-    * Тревожный (Anxious)
-    * Перфекционист (Perfectionist)
-    * Стабильный (Stable)
-    * Охотник (Hunter)
-* Определение и отображение доминирующего стиля.
-* Визуализация результатов с текстовым описанием и радарной диаграммой (с использованием Recharts).
-* Поддержка нескольких языков (Английский/Русский) с переключателем.
-* Переключатель темной/светлой темы оформления.
-* Возможность поделиться результатом в Telegram.
-* Возможность скачать результат в виде PNG-изображения (используется [html2canvas](https://html2canvas.hertzen.com/) через CDN).
-* Сохранение прогресса теста с использованием `localStorage`.
-* Адаптивный дизайн для различных размеров экрана.
-* (Заметка: Функция "Получить ИИ-рекомендации" в данный момент является заглушкой/симуляцией).
+## ✨ Features
 
-## 🚀 Технологический стек
+- **Interactive Quiz**  
+  Thoughtfully designed questions with multiple-choice answers.
+- **Six Relationship Styles**  
+  - **Openness**  
+  - **Avoidant**  
+  - **Anxious**  
+  - **Perfectionist**  
+  - **Stable**  
+  - **Hunter**  
+- **Instant Results**  
+  - Textual description of your dominant style  
+  - Radar chart visualization (powered by Recharts)  
+- **Language Toggle**  
+  Switch seamlessly between English and Russian.
+- **Theme Switcher**  
+  Light mode, dark mode—your eyes, your rules.
+- **Share & Save**  
+  - Send your result to Telegram in one click  
+  - Download your personalized result as a PNG (via html2canvas)
+- **Progress Persistence**  
+  Never lose your place—quiz state is saved in `localStorage`.
+- **Responsive Design**  
+  Looks great on phones, tablets, and desktops.
+- **AI Recommendations**  
+  Currently a playful placeholder—stay tuned for real AI-driven insights soon! 😉
 
-* **Фреймворк:** [React](https://reactjs.org/)
-* **Язык:** [TypeScript](https://www.typescriptlang.org/)
-* **Сборщик:** [Vite](https://vitejs.dev/)
-* **Стилизация:** [Tailwind CSS](https://tailwindcss.com/)
-* **Диаграммы:** [Recharts](https://recharts.org/)
-* **Анимации:** [Framer Motion](https://www.framer.com/motion/)
-* **Линтинг:** [ESLint](https://eslint.org/)
+---
 
-## 🔧 Установка и запуск
+## 🚀 Tech Stack
 
-Для запуска проекта локально выполните следующие шаги:
+- **Framework:** React  
+- **Language:** TypeScript  
+- **Bundler:** Vite  
+- **Styling:** Tailwind CSS  
+- **Charts:** Recharts  
+- **Animation:** Framer Motion  
+- **Linting:** ESLint  
 
-**1. Пререквизиты:**
+---
 
-* Установленный [Node.js](https://nodejs.org/) (рекомендуется версия v18 LTS или новее)
-* Установленный `npm` (обычно идет с Node.js) или `yarn`.
+## 🔧 Installation & Local Development
 
-**2. Клонируйте репозиторий:**
-
-```bash
-git clone [https://github.com/ALEVOLDON/relationship-test-app.git](https://github.com/ALEVOLDON/relationship-test-app.git)
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/ALEVOLDON/relationship-test-app.git
+   cd relationship-test-app
