@@ -1,0 +1,11 @@
+[build]
+  # Команда сборки — запускает сначала tsc, затем сборку Vite
+  command = "npm run build"
+  # Папка, которую нужно развернуть — по дефолту Vite отдаёт в dist
+  publish  = "dist"
+
+# Для SPA: перенаправляем все запросы на index.html
+[[redirects]]
+  from     = "/*"
+  to       = "/index.html"
+  status   = 200
