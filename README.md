@@ -1,54 +1,47 @@
-# React + TypeScript + Vite
+# Тест на тип личности в отношениях (Relationship Personality Test)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это веб-приложение, созданное с использованием React, Vite и TypeScript, которое позволяет пользователям пройти тест и определить свой доминирующий стиль личности в отношениях. Результаты визуализируются с помощью описания и радарной диаграммы.
 
-Currently, two official plugins are available:
+## ✨ Особенности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Интерфейс теста с вопросами и вариантами ответов.
+* Расчет баллов по 6 стилям отношений:
+    * Открытость (Openness)
+    * Избегающий (Avoidant)
+    * Тревожный (Anxious)
+    * Перфекционист (Perfectionist)
+    * Стабильный (Stable)
+    * Охотник (Hunter)
+* Определение и отображение доминирующего стиля.
+* Визуализация результатов с текстовым описанием и радарной диаграммой (с использованием Recharts).
+* Поддержка нескольких языков (Английский/Русский) с переключателем.
+* Переключатель темной/светлой темы оформления.
+* Возможность поделиться результатом в Telegram.
+* Возможность скачать результат в виде PNG-изображения (используется [html2canvas](https://html2canvas.hertzen.com/) через CDN).
+* Сохранение прогресса теста с использованием `localStorage`.
+* Адаптивный дизайн для различных размеров экрана.
+* (Заметка: Функция "Получить ИИ-рекомендации" в данный момент является заглушкой/симуляцией).
 
-## Expanding the ESLint configuration
+## 🚀 Технологический стек
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Фреймворк:** [React](https://reactjs.org/)
+* **Язык:** [TypeScript](https://www.typescriptlang.org/)
+* **Сборщик:** [Vite](https://vitejs.dev/)
+* **Стилизация:** [Tailwind CSS](https://tailwindcss.com/)
+* **Диаграммы:** [Recharts](https://recharts.org/)
+* **Анимации:** [Framer Motion](https://www.framer.com/motion/)
+* **Линтинг:** [ESLint](https://eslint.org/)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🔧 Установка и запуск
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Для запуска проекта локально выполните следующие шаги:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**1. Пререквизиты:**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+* Установленный [Node.js](https://nodejs.org/) (рекомендуется версия v18 LTS или новее)
+* Установленный `npm` (обычно идет с Node.js) или `yarn`.
+
+**2. Клонируйте репозиторий:**
+
+```bash
+git clone [https://github.com/ALEVOLDON/relationship-test-app.git](https://github.com/ALEVOLDON/relationship-test-app.git)
